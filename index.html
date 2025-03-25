@@ -14,9 +14,7 @@
         body {
             font-family: "Boldonse", system-ui;
             font-weight: 400;
-            font-style: normal;
         }
-        /* Custom gradient and hover effects */
         .gradient-hover {
             transition: all 0.3s ease;
             background: linear-gradient(135deg, #f6f8f9 0%, #e5ebee 100%);
@@ -34,7 +32,7 @@
          x-transition 
          class="fixed inset-0 z-50 bg-white/90 backdrop-blur-md p-6 rounded-3xl shadow-2xl flex flex-col items-center">
         <div class="w-full flex justify-between items-center border-b pb-4">
-            <p class="text-2xl font-bold text-gray-800">ECOTONICS</p>
+            <p class="text-sm font-bold text-gray-800">ECOTONICS</p>
             <button @click="isOpen = false" class="p-3 rounded-full hover:bg-gray-100 transition">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-600" viewBox="0 0 24 24" stroke="currentColor" fill="none">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
@@ -51,7 +49,7 @@
     
     <!-- Header -->
     <header class="bg-white mx-4 md:mx-10 my-5 rounded-3xl shadow-md flex justify-between items-center px-6 py-5">
-        <p class="text-2xl font-bold text-gray-800">ECOTONICS</p>
+        <p class="text-sm md:text-2xl font-bold text-gray-800">ECOTONICS</p>
         <nav class="hidden xl:flex gap-6">
             <a href="#" class="px-6 py-2 bg-gray-900 text-white rounded-3xl font-semibold hover:bg-gray-800 transition">HOME</a>
             <a href="#" class="px-6 py-2 hover:bg-gray-200 rounded-3xl font-semibold text-gray-700 hover:text-gray-900 transition">SOLUTIONS</a>
@@ -59,7 +57,7 @@
             <a href="#" class="px-6 py-2 hover:bg-gray-200 rounded-3xl font-semibold text-gray-700 hover:text-gray-900 transition">CONTACT</a>
         </nav>
         <button @click="isOpen = true" class="xl:hidden focus:outline-none text-gray-600 hover:text-gray-900 transition">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" stroke="currentColor" fill="none">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" stroke="currentColor" fill="none">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
         </button>
@@ -67,34 +65,34 @@
     </header>
     
     <!-- Hero Section -->
-    <section class="mx-4 md:mx-10 my-5 p-10 bg-white rounded-3xl shadow-md text-center flex flex-col items-center h-[75vh] justify-center relative overflow-hidden">
+    <section class="mx-4 md:mx-10 my-5 p-6 md:p-10 bg-white rounded-3xl shadow-md text-center flex flex-col items-center min-h-[65vh] md:min-h-[75vh] justify-center relative overflow-hidden">
         <div class="absolute inset-0 bg-gradient-to-br from-gray-100 to-white opacity-50 -z-10"></div>
-        <p class="text-xl text-gray-600 font-bold tracking-wide">Ecotonics</p>
-        <h1 class="text-4xl md:text-6xl lg:text-[65px] font-bold leading-tight my-10 text-gray-900 drop-shadow-sm">UNLOCK THE POWER OF EASY LIVING</h1>
-        <p class="text-xl md:text-3xl text-gray-700 font-bold tracking-wider">one stop tech solution</p>
+        <p class="text-lg md:text-xl text-gray-600 font-bold tracking-wide">Ecotonics</p>
+        <h1 class="text-3xl md:text-5xl lg:text-[65px] font-bold leading-loose my-6 md:my-10 text-gray-900 drop-shadow-sm">UNLOCK THE POWER OF EASY LIVING</h1>
+        <p class="text-lg md:text-3xl text-gray-700 font-bold tracking-wider">one stop tech solution</p>
     </section>
 
     <!-- Solutions -->
-    <section class="mx-4 md:mx-10 my-5 bg-white rounded-3xl shadow-md h-[70vh] flex justify-center items-center">
-        <div class="relative flex justify-center items-center w-full max-w-6xl space-x-12">
+    <section class="mx-4 md:mx-10 my-5 bg-white rounded-3xl shadow-md min-h-[85vh] flex justify-center items-center py-10 md:py-0">
+        <div class="relative flex flex-col md:flex-row justify-center items-center w-full max-w-6xl space-y-10 md:space-y-0 md:space-x-12">
             
             <!-- Left Services -->
-            <div class="flex flex-col space-y-24">
-                <div class="p-6 bg-gray-100 rounded-xl shadow-md w-48 text-center font-semibold gradient-hover text-gray-800 border border-gray-200">Service 1</div>
-                <div class="p-6 bg-gray-100 rounded-xl shadow-md w-48 text-center font-semibold gradient-hover text-gray-800 border border-gray-200 relative right-24">Service 2</div>
-                <div class="p-6 bg-gray-100 rounded-xl shadow-md w-48 text-center font-semibold gradient-hover text-gray-800 border border-gray-200">Service 3</div>
+            <div class="flex flex-col md:space-y-10 w-full md:w-auto flex-shrink-0 space-y-6 lg:space-y-24 px-4 md:px-0">
+                <div class="p-4 md:p-6 bg-gray-100 rounded-xl shadow-md w-full md:w-48 text-center font-semibold gradient-hover text-gray-800 border border-gray-200">Service 1</div>
+                <div class="p-4 md:p-6 bg-gray-100 rounded-xl shadow-md w-full md:w-48 text-center font-semibold gradient-hover text-gray-800 border border-gray-200 md:relative md:right-24">Service 2</div>
+                <div class="p-4 md:p-6 bg-gray-100 rounded-xl shadow-md w-full md:w-48 text-center font-semibold gradient-hover text-gray-800 border border-gray-200">Service 3</div>
             </div>
     
             <!-- Center Image -->
-            <div class="flex justify-center items-center">
-                <img src="images/home.png" alt="Home Image" class="w-[450px] h-[450px] md:w-[600px] md:h-[600px] object-contain hover:scale-105 transition-transform duration-300 ease-in-out">
+            <div class="flex justify-center items-center w-full md:w-auto">
+                <img src="images/home.png" alt="Home Image" class="w-[450px] h-[250px] md:w-[450px] md:h-[450px] lg:w-[700px] lg:h-[700px] object-contain hover:scale-105 transition-transform duration-300 ease-in-out">
             </div>
     
             <!-- Right Services -->
-            <div class="flex flex-col space-y-24">
-                <div class="p-6 bg-gray-100 rounded-xl shadow-md w-48 text-center font-semibold gradient-hover text-gray-800 border border-gray-200">Service 4</div>
-                <div class="p-6 bg-gray-100 rounded-xl shadow-md w-48 text-center font-semibold gradient-hover text-gray-800 border border-gray-200 relative left-24">Service 5</div>
-                <div class="p-6 bg-gray-100 rounded-xl shadow-md w-48 text-center font-semibold gradient-hover text-gray-800 border border-gray-200">Service 6</div>
+            <div class="flex flex-col md:space-y-10 w-full md:w-auto flex-shrink-0 space-y-6 lg:space-y-24 px-4 md:px-0">
+                <div class="p-4 md:p-6 bg-gray-100 rounded-xl shadow-md w-full md:w-48 text-center font-semibold gradient-hover text-gray-800 border border-gray-200">Service 4</div>
+                <div class="p-4 md:p-6 bg-gray-100 rounded-xl shadow-md w-full md:w-48 text-center font-semibold gradient-hover text-gray-800 border border-gray-200 md:relative md:left-24">Service 5</div>
+                <div class="p-4 md:p-6 bg-gray-100 rounded-xl shadow-md w-full md:w-48 text-center font-semibold gradient-hover text-gray-800 border border-gray-200">Service 6</div>
             </div>
     
         </div>
